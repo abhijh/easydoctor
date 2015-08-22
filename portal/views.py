@@ -5,6 +5,8 @@ from .forms import doctorForm
 from portal.models import doctor 
 
 
+def index(request) :
+	return render(request, 'easydoctor/index.html')
 
 def signUp(request):
 	if 'session_id' not in request.session:
